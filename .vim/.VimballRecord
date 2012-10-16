@@ -1,0 +1,1 @@
+download_script.php?src_id=18273: call delete('/Users/xuhongfeng/.vim/autoload/tagbar.vim')|call delete('/Users/xuhongfeng/.vim/doc/tagbar.txt')|call delete('/Users/xuhongfeng/.vim/plugin/tagbar.vim')|call delete('/Users/xuhongfeng/.vim/syntax/tagbar.vim')
