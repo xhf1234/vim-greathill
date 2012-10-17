@@ -9,12 +9,17 @@ set shiftwidth=4 "缩进为4个空格
 set ruler "在右下角显示光标所在的位置
 set so=7 "垂直移动时光标离底部7行
 colorscheme desert "配色方案
+set incsearch "查找时自动跳转
 
 set runtimepath^=~/.vim/plugin/ctrlp.vim
+call pathogen#infect()
+call pathogen#helptags()
 filetype plugin on
 
-set wildignore+=*.pyc,__init__.py "ctrlp 插件忽略列表
+set wildignore+=*.pyc,__init__.py,frontend-target*,target* "ctrlp 插件忽略列表
 nmap <silent> <SPACE> :CtrlPBuffer<CR>
+nmap <silent> <S-SPACE> :CtrlPMRU<CR>
+let g:ctrlp_max_files = 10000
 
 nmap <silent> <F3> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = 'ctags'
