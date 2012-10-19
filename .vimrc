@@ -27,6 +27,7 @@ let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_width = 50
 
 nmap <F2> :NERDTree<CR>
+nmap nt :NERDTreeFind<CR>
 
 " 保存文件时生成 jstags
 function! GenerateTag()
