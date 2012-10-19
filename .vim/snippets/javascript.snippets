@@ -21,7 +21,18 @@ snippet fenbi
 	});
 
 	/* vim: set et sw=4 ts=4 sts=4: */
-# jslint for browser js
+# tmpl for seajs
+snippet seajs
+	/*jslint browser: true, devel: true, indent: 4, nomen:true, vars: true */
+	/*global define */
+
+	define(function (require, exports, module) {
+		"use strict";
+
+		${1}
+	});
+
+# tmpl for browser js
 snippet browser
 	/*jslint browser: true, devel: true, indent: 4, nomen:true, vars: true */
 	/*global define */
@@ -31,7 +42,7 @@ snippet browser
 
 		${1}
 	}());
-# jslint for nodejs
+# tmpl for nodejs
 snippet node
 	/*jslint node: true, indent: 4, nomen:true, vars: true */
 	/*global require */
