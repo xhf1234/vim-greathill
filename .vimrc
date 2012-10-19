@@ -10,6 +10,7 @@ set ruler "在右下角显示光标所在的位置
 set so=7 "垂直移动时光标离底部7行
 colorscheme desert "配色方案
 set incsearch "查找时自动跳转
+set statusline+=%f "在状态栏显示当前文件路径
 
 set runtimepath^=~/.vim/plugin/ctrlp.vim
 call pathogen#infect()
