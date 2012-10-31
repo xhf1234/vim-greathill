@@ -1,3 +1,19 @@
+# vm $
+snippet $
+	${${1}}
+# fenbi mustache tmpl
+snippet fenbim
+	{{!
+	
+	`expand("%:t")`, `strftime("%b %-d, %Y")`
+	
+	Copyright `strftime("%Y")` fenbi.com. All rights reserved.
+	FENBI.COM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	
+	@author `g:snips_author` <`g:snips_email`>
+
+	}}
+	${1}
 # fenbi tmpl
 snippet fenbi
 	##
@@ -8,7 +24,7 @@ snippet fenbi
 	##
 
 	##
-	## @author `g:snips_author`
+	## @author `g:snips_author` <`g:snips_email`>
 	##
 
 	${1}
@@ -146,10 +162,10 @@ snippet base
 	<base href="${1}" target="${2}"`Close()`>
 snippet r
 	<br`Close()[1:]`>
+snippet a
+	<a href="${1:url}">${2}</a>
 snippet div
-	<div id="${1:name}">
-		${2}
-	</div>
+	<div class="${1:name}">${2}</div>
 # Embed QT Movie
 snippet movie
 	<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
@@ -197,10 +213,28 @@ snippet select
 	<select name="${1:some_name}" id="${2:$1}">
 		<option value="${3:option}">${4:$3}</option>
 	</select>${5}
+snippet cl
+	class="${1}"
 snippet table
-	<table border="${1:0}">
-		<tr><th>${2:Header}</th></tr>
-		<tr><th>${3:Data}</th></tr>
-	</table>${4}
+	<table class="${1:class}">
+		<thead>
+			<tr>
+				<th>${2:head}</td>
+				<th>${3:head}</td>
+				<th>${4:head}</td>
+			</tr>
+		</thead>
+		<tbody>
+			${5:tbody}
+		</tbody>
+	</table>
+snippet tr
+	<tr>
+		<td>${1:td}</td>
+		<td>${2:td}</td>
+		<td>${3:td}</td>
+	</tr>
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet span
+	<span class="${1}">${2}</span>
