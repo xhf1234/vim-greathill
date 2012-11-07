@@ -7,3 +7,9 @@
 [submodule ".vim/bundle/fenbi-frontend"]
 	path = .vim/bundle/fenbi-frontend
 	url = git://github.com/perfectworks/fenbi-frontend.git
+[submodule ".vim/bundle/xmledit"]
+	path = .vim/bundle/xmledit
+	url = git://github.com/sukima/xmledit.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git

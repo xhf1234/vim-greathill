@@ -1,3 +1,23 @@
+snippet fori
+	for (${1:i} = 0; $1 < ${2:n}; $1 = $1 + 1) {
+		${3:pass}
+	}
+# prototype function
+snippet pf
+	${1:Object}.prototype.${2:func} = function (${3:args}) {
+		${4:pass}
+	};
+# exports
+snippet exp
+	exports.${1:Module} = $1;
+# log error
+snippet err
+	console.error(error);
+# require
+snippet rq
+	require('${1}');
+snippet rqs
+	var ${1:Module} = require('$1');
 # fenbi tmpl
 snippet fenbi
 	/**
@@ -52,6 +72,9 @@ snippet node
 
 		${1}
 	}());
+# log
+snippet l
+	console.log('${1:var} = ' + $1);
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
