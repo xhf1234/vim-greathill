@@ -47,3 +47,5 @@ map <C-L> <C-W>l
 let g:snips_author="xuhf"
 let g:snips_email="xuhf@fenbi.com"
 let g:snips_compary="fenbi.com"
+
+let mapleader = ","
