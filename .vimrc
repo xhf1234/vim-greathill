@@ -1,3 +1,6 @@
+call pathogen#infect()
+call pathogen#helptags()
+
 syntax on "语法高亮
 set number "显示行号
 set smartindent "自动补全(换行时拷贝当前行的缩进)
@@ -8,13 +11,12 @@ set backspace=2 "否则删除会有问题
 set shiftwidth=4 "缩进为4个空格
 set ruler "在右下角显示光标所在的位置
 set so=7 "垂直移动时光标离底部7行
-colorscheme desert "配色方案
+colo molokai "配色方案
+set t_Co=256
 set incsearch "查找时自动跳转
 set statusline+=%f "在状态栏显示当前文件路径
 
 set runtimepath^=~/.vim/plugin/ctrlp.vim
-call pathogen#infect()
-call pathogen#helptags()
 filetype plugin on
 
 set wildignore+=*.pyc,__init__.py,frontend-target*,target* "ctrlp 插件忽略列表
