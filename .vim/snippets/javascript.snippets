@@ -19,6 +19,23 @@ snippet events
 	on${1}: function (evt) {
 		${2:pass}
 	}
+snippet view
+	var Backbone = require('${1:../lib/backbone}');
+
+	var ${2:view} = ${3:Backbone.View}.extend({
+		${4:pass}
+	});
+
+	return $2;
+snippet ncbk
+	function (error, ${1:params}) {
+		${2:pass}
+	});
+
+snippet cbk
+	function (${1:params}) {
+		${2:pass}
+	});
 
 snippet fori
 	for (${1:i} = 0; $1 < ${2:n}; $1 = $1 + 1) {
@@ -39,7 +56,7 @@ snippet err
 snippet rq
 	require('${1}');
 snippet rqs
-	var ${1:Module} = require('$1');
+	var ${1:Module} = require('${2:./}$1');
 # fenbi tmpl
 snippet fenbi
 	/**
@@ -95,7 +112,7 @@ snippet node
 		${1}
 	}());
 # log
-snippet l
+snippet log
 	console.log('${1:var} = ' + $1);
 # Prototype
 snippet proto
