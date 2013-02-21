@@ -53,3 +53,10 @@ let g:snips_email="xuhf@fenbi.com"
 let g:snips_compary="fenbi.com"
 
 let mapleader = ","
+
+let g:syntastic_javascript_jslint_conf = "--unparam --unused --browser --vars --nomen --plusplus --sloppy --predef define --predef window --predef location --predef history --predef location --predef document --predef use --predef __"
+let g:syntastic_check_on_open = 1
+let g:syntastic_enable_signs = 0
+let g:syntastic_mode_map = { 'mode': 'passive',
+                    \ 'active_filetypes': ['javascript'],
+                    \ 'passive_filetypes': [] }
