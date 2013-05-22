@@ -21,7 +21,7 @@ inoremap jj <ESC> "输入模式时jj代替ESC
 set runtimepath^=~/.vim/plugin/ctrlp.vim
 filetype plugin on
 
-set wildignore+=*.pyc,__init__.py,frontend-target*,target* "ctrlp 插件忽略列表
+set wildignore+=*.pyc,__init__.py,frontend-target*,target*,node_modules "ctrlp 插件忽略列表
 nmap <silent> <SPACE> :CtrlPBuffer<CR>
 nmap <silent> <S-SPACE> :CtrlPMRU<CR>
 let g:ctrlp_max_files = 10000
@@ -57,6 +57,6 @@ let mapleader = ","
 let g:syntastic_javascript_jslint_conf = "--unparam --unused --browser --vars --nomen --plusplus --sloppy --predef define --predef window --predef location --predef history --predef location --predef document --predef use --predef __"
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 0
-let g:syntastic_mode_map = { 'mode': 'passive',
+let g:syntastic_mode_map = { 'mode': 'active',
                     \ 'active_filetypes': ['javascript'],
                     \ 'passive_filetypes': [] }

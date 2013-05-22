@@ -1,3 +1,15 @@
+snippet extend
+	var ${1:Sub} = ${2:Super}.extend({
+		${3:}
+	});
+
+snippet override
+	${1:func}: function () {
+		${2:Base}.prototype.$1.apply(this, arguments);
+
+		${3}
+	},
+
 snippet base
 	${1:Base}.prototype.${2:func}.apply(this, arguments);
 snippet ,var
@@ -178,7 +190,7 @@ snippet do
 	} while (${1:/* condition */});
 # Object Method
 snippet :f
-	${1:method_name}: function(${2:attribute}) {
+	${1:method_name}: function (${2:attribute}) {
 		${4}
 	}${3:,}
 # setTimeout function
