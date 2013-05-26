@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/velocity"]
+	path = .vim/bundle/velocity
+	url = https://github.com/lepture/vim-velocity.git
