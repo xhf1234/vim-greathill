@@ -3,6 +3,8 @@ snippet extend
 		${3:}
 	});
 
+	return $1;
+
 snippet override
 	${1:func}: function () {
 		${2:Base}.prototype.$1.apply(this, arguments);
@@ -31,7 +33,9 @@ snippet events
 	/* -------------------- Event Listener ----------------------- */
 
 	on${1}: function (evt) {
+		evt.preventDefault();
 		${2:pass}
+		evt.stopPropagation();
 	}
 snippet view
 	var Backbone = require('${1:../lib/backbone}');
