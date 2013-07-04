@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/xuhongfeng/EverBox/workspace/a/bar-tarzan/src/main/webapp/WEB-INF/view/component/nav'
 let g:netrw_dirhist_2='/Users/xuhongfeng/.vim'
 let g:netrw_dirhist_3='/Users/xuhongfeng/Google-Drive/eclipse/android-sdk'
 let g:netrw_dirhist_4='/Users/xuhongfeng/EverBox/workspace/a/tarzan-uni/.git/hooks'
+let g:netrw_dirhist_5='/Users/xuhongfeng/EverBox/workspace/a/uni-android/.git'
+let g:netrw_dirhist_6='/Users/xuhongfeng/EverBox/workspace/a/uni-android/filter-app/jzjj/res/values/strings.filter'
+let g:netrw_dirhist_7='/Users/xuhongfeng/EverBox/workspace/a/uni-android/filter'
+let g:netrw_dirhist_8='/Users/xuhongfeng/android-build/source/xingce/lib/xingce-slidemenu'
+let g:netrw_dirhist_9='/Users/xuhongfeng/tmp/test'
