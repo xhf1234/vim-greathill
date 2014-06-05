@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/velocity"]
 	path = .vim/bundle/velocity
 	url = https://github.com/lepture/vim-velocity.git
+[submodule ".vim/bundle/vim-jshint"]
+	path = .vim/bundle/vim-jshint
+	url = git://github.com/sleistner/vim-jshint.git
