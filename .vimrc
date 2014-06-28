@@ -60,3 +60,6 @@ let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { 'mode': 'active',
                     \ 'active_filetypes': ['javascript'],
                     \ 'passive_filetypes': [] }
+
+" 保存文件时jshint
+let jshint2_save = 1
