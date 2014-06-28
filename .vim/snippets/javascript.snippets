@@ -28,6 +28,13 @@ snippet ,fun
 		${3:pass}
 	}
 
+snippet event
+	on${1}: function (evt) {
+		evt.preventDefault();
+		${3:pass}
+		evt.stopPropagation();
+	}${2:,}
+
 snippet events
 	
 	/* -------------------- Event Listener ----------------------- */
