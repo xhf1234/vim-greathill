@@ -1,5 +1,5 @@
 cd source
-git clone https://github.com/xuhongfeng/vim-greathill.git
+git@github.com:xuhongfeng/vim-greathill.git
 cd vim-greathill
 git submodule init
 git submodule update
