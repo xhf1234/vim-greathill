@@ -1,6 +1,9 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+set cursorline "高亮显示当前行
+set cursorcolumn "高亮显示当前列
+
 syntax on "语法高亮
 set number "显示行号
 set smartindent "自动补全(换行时拷贝当前行的缩进)
