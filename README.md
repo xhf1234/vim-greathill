@@ -10,3 +10,7 @@
 
 # 安装插件
  * git submodule add https://github.com/derekwyatt/vim-fswitch .vim/bundle/vim-fswitch
+
+
+# c IDE
+ * http://ricostacruz.com/til/navigate-code-with-ctags
