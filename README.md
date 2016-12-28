@@ -9,3 +9,4 @@
  * ln -s .vimrc ~/.vimrc
 
 # 安装插件
+ * git submodule add https://github.com/derekwyatt/vim-fswitch .vim/bundle/vim-fswitch
