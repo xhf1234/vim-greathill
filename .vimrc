@@ -69,3 +69,4 @@ let jshint2_save = 1
 
 " 自定义设定文件后缀和filetype的对应
 autocmd BufRead,BufNewFile   *.gyp set filetype=json
+autocmd BufRead,BufNewFile   *.gypi set filetype=json
